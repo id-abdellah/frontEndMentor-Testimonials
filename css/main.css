@@ -67,6 +67,8 @@ body {
 .wrapper div .person .infos span:first-child {
     font-weight: 600;
     color: white;
+    z-index: 99;
+    position: relative;
 }
 
 .wrapper div .person .blk span:first-child {
@@ -121,6 +123,16 @@ body {
 .wrapper .first {
     grid-area: a;
     background-color: #733fc8;
+    position: relative;
+}
+
+.wrapper .first::after  {
+    content: url(../imgs/bg-pattern-quotation.svg);
+    position: absolute;
+    top: -15px;
+    right: 0;
+    opacity: 50%;
+    transform: scale(.6);
 }
 
 
